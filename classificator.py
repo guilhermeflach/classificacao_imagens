@@ -79,9 +79,8 @@ def classificar_foto(caminho_foto: str, threshold_exterior: float = 0.5):
 
 
 # Teste
-extensao = '.jpg'
-nome_img = input('Nome da imagem:')
-caminho = nome_img + extensao
+caminho = input('Nome da imagem:')+'.jpg'
+
 eh_ext, scores = classificar_foto(caminho)
 
 print(f"É exterior? {eh_ext}")
